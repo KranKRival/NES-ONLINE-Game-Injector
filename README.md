@@ -30,4 +30,3 @@ Version 1.0M (3.5)
 - #GameCode - genereted random code using rom file name letters
 - #the other fields just preset, easy life :)
 - 4.generate normal game dirictory name from game title
-- 5.changed from text input feilds to numeric input for numbers
