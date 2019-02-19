@@ -1,5 +1,5 @@
 # NES-ONLINE-Game-AutoInjector Mod By KranK/KuranKu
-![noga_3 5](https://user-images.githubusercontent.com/43298952/46807664-c29b8680-cd6a-11e8-9010-7ec49169087d.png)
+![noga_3 5](https://i.imgur.com/Lct4RDu.png)
 
 - You need the NvnTexpkg.package
 - Extract NvnTexpkg.package into the same folder like NES-Online-Game-Autoinjector
