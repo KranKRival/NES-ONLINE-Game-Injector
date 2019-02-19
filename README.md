@@ -23,11 +23,11 @@ Output folder: (NES-Online-Game-Autoinjector).path/NES_ONLINE_MOD
 
 Version 1.0M (3.5)
 
-1.added new/old format support choose from dropdown menu
-2.minor ui modifications for better exprience 
-3.auto fil support added , some fields gets filled automaticly
-#GameTitle - genereted from the opened rom name 
-#GameCode - genereted random code using rom file name letters
-#the other fields just preset, easy life :)
-4.generate normal game dirictory name from game title
-5.changed from text input feilds to numeric input for numbers
+- 1.added new/old format support choose from dropdown menu
+- 2.minor ui modifications for better exprience 
+- 3.auto fil support added , some fields gets filled automaticly
+- #GameTitle - genereted from the opened rom name 
+- #GameCode - genereted random code using rom file name letters
+- #the other fields just preset, easy life :)
+- 4.generate normal game dirictory name from game title
+- 5.changed from text input feilds to numeric input for numbers
