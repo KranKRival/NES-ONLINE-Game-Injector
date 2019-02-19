@@ -21,6 +21,10 @@ Legend:
 
 Output folder: (NES-Online-Game-Autoinjector).path/NES_ONLINE_MOD
 
+Version 1.1M (3.5)
+
+- 1.changed from text input feilds to numeric input for numbers
+
 Version 1.0M (3.5)
 
 - 1.added new/old format support choose from dropdown menu
