@@ -1,4 +1,4 @@
-# NES-ONLINE-Game-AutoInjector
+# NES-ONLINE-Game-AutoInjector Mod By KranK/KuranKu
 ![noga_3 5](https://user-images.githubusercontent.com/43298952/46807664-c29b8680-cd6a-11e8-9010-7ec49169087d.png)
 
 - You need the NvnTexpkg.package
@@ -21,43 +21,13 @@ Legend:
 
 Output folder: (NES-Online-Game-Autoinjector).path/NES_ONLINE_MOD
 
-Update 3.5
+Version 1.0M (3.5)
 
-- Add PNG / JPG Support (auto-convert PNG/JPG to TGA)
-- Bug fixes
-
-Update 3.0
-
-- Add Cover-Preview
-- Implement TGA Sharp Lib (MIT License https://github.com/ALEXGREENALEX/TGASharpLib credit to: ALEXGREENALEX)
-- New-Design
-- Bug fixes
-
-Update 2.8.1
-
-- Bug fixes
-
-Update 2.8.0
-
-- Add Details-Picture to EU/US Version
-- Add false/true radio-button
-- Add new Game Code outset
-- Textbox jump is fixed
-- Input methods revised for error minimization
-- More background checks for error minimization
-- Bug fixes
-
-Update 2.5.0
-
-- Add FAMICOM-Support (NES ONLINE JP Version)
-
-Update 2.0.1
-
-- Bug fixes
-
-Update 2.0
-
-- Add ToolTip
-- Add Game code verification
-- Bug fixes
-- and more background stuff
+1.added new/old format support choose from dropdown menu
+2.minor ui modifications for better exprience 
+3.auto fil support added , some fields gets filled automaticly
+#GameTitle - genereted from the opened rom name 
+#GameCode - genereted random code using rom file name letters
+#the other fields just preset, easy life :)
+4.generate normal game dirictory name from game title
+5.changed from text input feilds to numeric input for numbers
