@@ -50,6 +50,7 @@
             this.GametitleTextbox = new System.Windows.Forms.TextBox();
             this.OverscanTextbox = new System.Windows.Forms.TextBox();
             this.FadeinTextbox = new System.Windows.Forms.TextBox();
+            this.FadeinTextboxUpDown = new System.Windows.Forms.NumericUpDown();
             this.VolumeTextbox = new System.Windows.Forms.TextBox();
             this.GamepathTextbox = new System.Windows.Forms.TextBox();
             this.Coverpath1Textbox = new System.Windows.Forms.TextBox();
@@ -88,7 +89,18 @@
             this.SuppoertLabel = new MaterialSkin.Controls.MaterialLabel();
             this.GameDirTextBox = new System.Windows.Forms.TextBox();
             this.SetFormatComboBox = new System.Windows.Forms.ComboBox();
+            this.FadeinTextboxUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.OverscanTextboxUpDown = new System.Windows.Forms.NumericUpDown();
+            this.OverscanTextboxUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.OverscanTextboxUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.OverscanTextboxUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.PreviewBoxExt = new PictureBox_Ext.PictureBoxExt();
+            ((System.ComponentModel.ISupportInitialize)(this.FadeinTextboxUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FadeinTextboxUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverscanTextboxUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverscanTextboxUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverscanTextboxUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverscanTextboxUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PreviewBoxExt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -350,6 +362,24 @@
             this.FadeinTextbox.Text = "3";
             this.FadeinTextbox.TextChanged += new System.EventHandler(this.FadeinTextbox_TextChanged);
             // 
+            // FadeinTextboxUpDown
+            // 
+            this.FadeinTextboxUpDown.Location = new System.Drawing.Point(1048, 420);
+            this.FadeinTextboxUpDown.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.FadeinTextboxUpDown.Name = "FadeinTextboxUpDown";
+            this.FadeinTextboxUpDown.Size = new System.Drawing.Size(42, 22);
+            this.FadeinTextboxUpDown.TabIndex = 17;
+            this.FadeinTextboxUpDown.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            this.FadeinTextboxUpDown.ValueChanged += new System.EventHandler(this.FadeinTextboxUpDown_ValueChanged);
+            // 
             // VolumeTextbox
             // 
             this.VolumeTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
@@ -494,7 +524,7 @@
             // OverscanTextbox2
             // 
             this.OverscanTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.OverscanTextbox2.Location = new System.Drawing.Point(1080, 336);
+            this.OverscanTextbox2.Location = new System.Drawing.Point(1097, 336);
             this.OverscanTextbox2.Margin = new System.Windows.Forms.Padding(4);
             this.OverscanTextbox2.MaxLength = 1;
             this.OverscanTextbox2.Name = "OverscanTextbox2";
@@ -506,7 +536,7 @@
             // OverscanTextbox3
             // 
             this.OverscanTextbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.OverscanTextbox3.Location = new System.Drawing.Point(1123, 336);
+            this.OverscanTextbox3.Location = new System.Drawing.Point(1155, 337);
             this.OverscanTextbox3.Margin = new System.Windows.Forms.Padding(4);
             this.OverscanTextbox3.MaxLength = 1;
             this.OverscanTextbox3.Name = "OverscanTextbox3";
@@ -518,7 +548,7 @@
             // OverscanTextbox4
             // 
             this.OverscanTextbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.OverscanTextbox4.Location = new System.Drawing.Point(1165, 336);
+            this.OverscanTextbox4.Location = new System.Drawing.Point(1210, 336);
             this.OverscanTextbox4.Margin = new System.Windows.Forms.Padding(4);
             this.OverscanTextbox4.MaxLength = 1;
             this.OverscanTextbox4.Name = "OverscanTextbox4";
@@ -530,7 +560,7 @@
             // FadeinTextbox2
             // 
             this.FadeinTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.FadeinTextbox2.Location = new System.Drawing.Point(1080, 417);
+            this.FadeinTextbox2.Location = new System.Drawing.Point(1097, 417);
             this.FadeinTextbox2.Margin = new System.Windows.Forms.Padding(4);
             this.FadeinTextbox2.MaxLength = 1;
             this.FadeinTextbox2.Name = "FadeinTextbox2";
@@ -794,6 +824,61 @@
             this.SetFormatComboBox.TabIndex = 16;
             this.SetFormatComboBox.Text = "Output Format ...";
             // 
+            // FadeinTextboxUpDown2
+            // 
+            this.FadeinTextboxUpDown2.Location = new System.Drawing.Point(1108, 420);
+            this.FadeinTextboxUpDown2.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.FadeinTextboxUpDown2.Name = "FadeinTextboxUpDown2";
+            this.FadeinTextboxUpDown2.Size = new System.Drawing.Size(42, 22);
+            this.FadeinTextboxUpDown2.TabIndex = 17;
+            this.FadeinTextboxUpDown2.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.FadeinTextboxUpDown2.ValueChanged += new System.EventHandler(this.FadeinTextboxUpDown2_ValueChanged);
+            // 
+            // OverscanTextboxUpDown
+            // 
+            this.OverscanTextboxUpDown.Location = new System.Drawing.Point(1048, 339);
+            this.OverscanTextboxUpDown.Name = "OverscanTextboxUpDown";
+            this.OverscanTextboxUpDown.Size = new System.Drawing.Size(41, 22);
+            this.OverscanTextboxUpDown.TabIndex = 18;
+            this.OverscanTextboxUpDown.ValueChanged += new System.EventHandler(this.OverscanTextboxUpDown_ValueChanged);
+            // 
+            // OverscanTextboxUpDown2
+            // 
+            this.OverscanTextboxUpDown2.Location = new System.Drawing.Point(1107, 339);
+            this.OverscanTextboxUpDown2.Name = "OverscanTextboxUpDown2";
+            this.OverscanTextboxUpDown2.Size = new System.Drawing.Size(41, 22);
+            this.OverscanTextboxUpDown2.TabIndex = 18;
+            this.OverscanTextboxUpDown2.ValueChanged += new System.EventHandler(this.OverscanTextboxUpDown2_ValueChanged);
+            // 
+            // OverscanTextboxUpDown3
+            // 
+            this.OverscanTextboxUpDown3.Location = new System.Drawing.Point(1166, 339);
+            this.OverscanTextboxUpDown3.Name = "OverscanTextboxUpDown3";
+            this.OverscanTextboxUpDown3.Size = new System.Drawing.Size(41, 22);
+            this.OverscanTextboxUpDown3.TabIndex = 18;
+            this.OverscanTextboxUpDown3.Value = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.OverscanTextboxUpDown3.ValueChanged += new System.EventHandler(this.OverscanTextboxUpDown3_ValueChanged);
+            // 
+            // OverscanTextboxUpDown4
+            // 
+            this.OverscanTextboxUpDown4.Location = new System.Drawing.Point(1220, 339);
+            this.OverscanTextboxUpDown4.Name = "OverscanTextboxUpDown4";
+            this.OverscanTextboxUpDown4.Size = new System.Drawing.Size(41, 22);
+            this.OverscanTextboxUpDown4.TabIndex = 18;
+            this.OverscanTextboxUpDown4.ValueChanged += new System.EventHandler(this.OverscanTextboxUpDown4_ValueChanged);
+            // 
             // PreviewBoxExt
             // 
             this.PreviewBoxExt.BackColor = System.Drawing.Color.Transparent;
@@ -817,6 +902,18 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1384, 532);
+            this.Controls.Add(this.OverscanTextbox4);
+            this.Controls.Add(this.OverscanTextbox3);
+            this.Controls.Add(this.OverscanTextbox2);
+            this.Controls.Add(this.OverscanTextbox);
+            this.Controls.Add(this.OverscanTextboxUpDown4);
+            this.Controls.Add(this.OverscanTextboxUpDown3);
+            this.Controls.Add(this.OverscanTextboxUpDown2);
+            this.Controls.Add(this.OverscanTextboxUpDown);
+            this.Controls.Add(this.FadeinTextbox2);
+            this.Controls.Add(this.FadeinTextbox);
+            this.Controls.Add(this.FadeinTextboxUpDown2);
+            this.Controls.Add(this.FadeinTextboxUpDown);
             this.Controls.Add(this.SetFormatComboBox);
             this.Controls.Add(this.GameDirTextBox);
             this.Controls.Add(this.SuppoertLabel);
@@ -843,12 +940,6 @@
             this.Controls.Add(this.Coverpath1Textbox);
             this.Controls.Add(this.GamepathTextbox);
             this.Controls.Add(this.VolumeTextbox);
-            this.Controls.Add(this.FadeinTextbox2);
-            this.Controls.Add(this.FadeinTextbox);
-            this.Controls.Add(this.OverscanTextbox4);
-            this.Controls.Add(this.OverscanTextbox3);
-            this.Controls.Add(this.OverscanTextbox2);
-            this.Controls.Add(this.OverscanTextbox);
             this.Controls.Add(this.GametitleTextbox);
             this.Controls.Add(this.CopyrightTextbox);
             this.Controls.Add(this.GamecodeTextbox);
@@ -876,6 +967,12 @@
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NES Online Game Autoinjector MOD By KranK/KuranKu";
+            ((System.ComponentModel.ISupportInitialize)(this.FadeinTextboxUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FadeinTextboxUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverscanTextboxUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverscanTextboxUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverscanTextboxUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OverscanTextboxUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PreviewBoxExt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -943,6 +1040,12 @@
         private MaterialSkin.Controls.MaterialLabel SuppoertLabel;
         private System.Windows.Forms.TextBox GameDirTextBox;
         private System.Windows.Forms.ComboBox SetFormatComboBox;
+        private System.Windows.Forms.NumericUpDown FadeinTextboxUpDown;
+        private System.Windows.Forms.NumericUpDown FadeinTextboxUpDown2;
+        private System.Windows.Forms.NumericUpDown OverscanTextboxUpDown;
+        private System.Windows.Forms.NumericUpDown OverscanTextboxUpDown2;
+        private System.Windows.Forms.NumericUpDown OverscanTextboxUpDown3;
+        private System.Windows.Forms.NumericUpDown OverscanTextboxUpDown4;
     }
 }
 

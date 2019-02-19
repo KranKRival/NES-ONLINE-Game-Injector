@@ -1274,5 +1274,35 @@ namespace NES_Online_Game_Injector
         {
             Process.Start("https://discord.gg/8mNFFcC");
         }
+
+        private void FadeinTextboxUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            this.FadeinTextbox.Text = FadeinTextboxUpDown.Text;
+        }
+
+        private void FadeinTextboxUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            this.FadeinTextbox2.Text = FadeinTextboxUpDown2.Text;
+        }
+
+        private void OverscanTextboxUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            this.OverscanTextbox.Text = OverscanTextboxUpDown.Text;
+        }
+
+        private void OverscanTextboxUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            this.OverscanTextbox2.Text = OverscanTextboxUpDown2.Text;
+        }
+
+        private void OverscanTextboxUpDown3_ValueChanged(object sender, EventArgs e)
+        {
+            this.OverscanTextbox3.Text = OverscanTextboxUpDown3.Text;
+        }
+
+        private void OverscanTextboxUpDown4_ValueChanged(object sender, EventArgs e)
+        {
+            this.OverscanTextbox4.Text = OverscanTextboxUpDown4.Text;
+        }
     }
 }
