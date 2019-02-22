@@ -1,19 +1,29 @@
-﻿using System;
+﻿using MaterialSkin;
+using NES_Online_Game_Injector.GUI;
+using System;
 using System.Windows.Forms;
 
 namespace NES_Online_Game_Injector
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// Der Haupteinstiegspunkt für die Anwendung.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void EnableVisualStyles()
+        {
+            MaterialSkinManager skinmgr = MaterialSkinManager.Instance;
+            skinmgr.Theme = MaterialSkinManager.Themes.DARK;
+            skinmgr.ColorScheme = new ColorScheme(Primary.LightGreen400, Primary.LightGreen400, Primary.LightGreen400, Accent.Red100, TextShade.WHITE);
+            return;
+        }
+
+        private static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new UIMain());
         }
     }
 }

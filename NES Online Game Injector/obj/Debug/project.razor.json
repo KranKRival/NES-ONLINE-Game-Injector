@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "e:\\Files\\Documents\\GitHub\\NES-ONLINE-Game-Injector\\NES Online Game Injector\\NES Online Game Injector.csproj",
+  "TargetFramework": "v4.6.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
