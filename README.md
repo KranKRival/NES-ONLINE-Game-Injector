@@ -23,6 +23,13 @@
 Output folder: (NESONLINEGameAutoInjectorMod).path/NES_ONLINE_MOD
 
 # Changelog
+##Version 1.3.5M (3.5) (The Myth 1.3.5M)
+* Fixed Game Code Generation, no more exeptions
+* Fixed Game Title Generation, Tool will remove all Special Characters from the Game file opened
+* Fixed Thorow Exption Error When Canaceling Open Rom File dialog
+* Added Extra Checks For Game Code & Game Tiltele Generation scripts to insure stability
+
+
 ## Version 1.3M (3.5) (The Myth)
 
 * Fixed Output Directory Name, Dosn't Show GameCode Anymore in Game directory Name
