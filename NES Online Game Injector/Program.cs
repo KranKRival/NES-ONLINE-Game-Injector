@@ -10,7 +10,7 @@ namespace NES_Online_Game_Injector
         /// <summary>
         /// Der Haupteinstiegspunkt für die Anwendung.
         /// </summary>
-        [STAThread]
+        
         public static void EnableVisualStyles()
         {
             MaterialSkinManager skinmgr = MaterialSkinManager.Instance;
@@ -18,7 +18,7 @@ namespace NES_Online_Game_Injector
             skinmgr.ColorScheme = new ColorScheme(Primary.LightGreen400, Primary.LightGreen400, Primary.LightGreen400, Accent.Red100, TextShade.WHITE);
             return;
         }
-
+        [STAThread]
         private static void Main()
         {
             Application.EnableVisualStyles();
