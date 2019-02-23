@@ -55,8 +55,14 @@
     <ApplicationIcon>nogaicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -71,22 +77,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main Form.cs">
+    <Compile Include="NES.GUI\UIMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main Form.Designer.cs">
-      <DependentUpon>Main Form.cs</DependentUpon>
+    <Compile Include="NES.GUI\UIMain.Designer.cs">
+      <DependentUpon>UIMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Nvntexpkg.cs" />
+    <Compile Include="NES.Core\Nvntexpkg.cs" />
+    <Compile Include="NES.Services\SvcDirSetup.cs" />
+    <Compile Include="NES.Services\SvcUpdate.cs" />
     <Compile Include="PictureBoxExt.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TGASharpLib.cs" />
-    <Compile Include="Zdrop.cs" />
-    <EmbeddedResource Include="Main Form.resx">
-      <DependentUpon>Main Form.cs</DependentUpon>
+    <Compile Include="NES.Core\TGASharpLib.cs" />
+    <Compile Include="NES.Core\Zdrop.cs" />
+    <EmbeddedResource Include="NES.GUI\UIMain.resx">
+      <DependentUpon>UIMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

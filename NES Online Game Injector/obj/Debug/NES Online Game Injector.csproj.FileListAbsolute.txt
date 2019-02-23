@@ -1,0 +1,16 @@
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\bin\Debug\NES Online Game AutoInjector.exe.config
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\bin\Debug\NES Online Game AutoInjector.exe
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\bin\Debug\NES Online Game AutoInjector.pdb
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\bin\Debug\Ionic.Zip.dll
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\bin\Debug\MaterialSkin.dll
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\bin\Debug\Newtonsoft.Json.dll
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\bin\Debug\Newtonsoft.Json.pdb
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\bin\Debug\Newtonsoft.Json.xml
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\obj\Debug\NES Online Game Injector.csprojAssemblyReference.cache
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\obj\Debug\NES_Online_Game_Injector.GUI.UIMain.resources
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\obj\Debug\NES_Online_Game_AutoInjector.Properties.Resources.resources
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\obj\Debug\NES Online Game Injector.csproj.GenerateResource.cache
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\obj\Debug\NES Online Game Injector.csproj.CoreCompileInputs.cache
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\obj\Debug\NES Online Game Injector.csproj.CopyComplete
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\obj\Debug\NES Online Game AutoInjector.exe
+E:\Files\Documents\GitHub\NES-ONLINE-Game-Injector\NES Online Game Injector\obj\Debug\NES Online Game AutoInjector.pdb
