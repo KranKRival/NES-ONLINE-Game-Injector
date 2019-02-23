@@ -43,6 +43,23 @@ namespace NES_Online_Game_Injector.GUI
             return stringBuilder.ToString();
         }
 
+        public string FixGameCode(string input, int size)
+        {
+            var allowedChars = "abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ";
+            var chars = new char[size];
+            var rd = new Random();
+            for (var i = 0; i < size; i++)
+            {
+                chars[i] = allowedChars[rd.Next(0, allowedChars.Length)];
+            }
+            return new String(chars);
+        }
+
+        public string FixGameTitle(string input)
+        {
+            return Regex.Replace(input, @"\W+", "");
+        }
+
         private static int CountChars(string value)
         {
             int result = 0;
@@ -145,12 +162,17 @@ namespace NES_Online_Game_Injector.GUI
             GameBrowse.FilterIndex = 1;
 
             if (GameBrowse.ShowDialog() == DialogResult.OK)
+            {
                 GamepathTextbox.Text = GameBrowse.FileName;
-            string Nameout = System.IO.Path.GetFileName(GameBrowse.FileName).Split('.')[0].Trim();
-            string Name_s = Nameout.Replace(" ", "");
-            GameDirTextBox.Text = Name_s;
-            GametitleTextbox.Text = Nameout;
-            GamecodeTextbox.Text = "N" + GetUniqueGameCode(Nameout, 3) + "E";
+                string Nameout = System.IO.Path.GetFileName(GameBrowse.FileName).Split('.')[0].Trim();
+                GameDirTextBox.Text = FixGameTitle(Nameout);
+                GametitleTextbox.Text = FixGameTitle(Nameout);
+                GamecodeTextbox.Text = "N" + FixGameCode(GetUniqueGameCode(Nameout, 3), 3) + "E";
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void Coverpath1BrowseButton_Click(object sender, EventArgs e)
