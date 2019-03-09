@@ -340,33 +340,6 @@ namespace NES_Online_Game_Injector.GUI
             }
         }
 
-        private void FadeinTextbox_TextChanged(object sender, EventArgs e)
-        {
-            if (System.Text.RegularExpressions.Regex.IsMatch(FadeinTextbox.Text, "[^0-9]"))
-            {
-                MessageBox.Show("Please enter only numbers [0-9].");
-                FadeinTextbox.Text = FadeinTextbox.Text.Remove(FadeinTextbox.Text.Length - 1);
-            }
-        }
-
-        private void FadeinTextbox2_TextChanged(object sender, EventArgs e)
-        {
-            if (System.Text.RegularExpressions.Regex.IsMatch(FadeinTextbox2.Text, "[^0-9]"))
-            {
-                MessageBox.Show("Please enter only numbers [0-9].");
-                FadeinTextbox2.Text = FadeinTextbox2.Text.Remove(FadeinTextbox2.Text.Length - 1);
-            }
-        }
-
-        private void VolumeTextbox_TextChanged(object sender, EventArgs e)
-        {
-            if (System.Text.RegularExpressions.Regex.IsMatch(VolumeTextbox.Text, "[^0-99]"))
-            {
-                MessageBox.Show("Please enter only numbers [0-99].");
-                VolumeTextbox.Text = VolumeTextbox.Text.Remove(VolumeTextbox.Text.Length - 1);
-            }
-        }
-
         private void OldFormat()
         {
             string line;
@@ -581,7 +554,7 @@ namespace NES_Online_Game_Injector.GUI
                     db.WriteLine("            \"rom\": \"/titles/HLV-C-" + GamecodeTextbox.Text + "/HLV-C-" + GamecodeTextbox.Text + ".nes\",");
                     db.WriteLine("            \"copyright\": \"" + CopyrightTextbox.Text + "\",");
                     db.WriteLine("            \"title\": \"" + GametitleTextbox.Text + "\",");
-                    db.WriteLine("            \"volume\": " + VolumeTextbox.Text + ",");
+                    db.WriteLine("            \"volume\": " + VolumeUpDown.Text + ",");
                     db.WriteLine("            \"release_date\": \"1987-12-01\",");
                     db.WriteLine("            \"players_count\": 1,");
                     db.WriteLine("            \"cover\": \"/titles/HLV-C-" + GamecodeTextbox.Text + "/HLV-C-" + GamecodeTextbox.Text + ".xtx.z\",");
@@ -597,7 +570,7 @@ namespace NES_Online_Game_Injector.GUI
                     {
                         db.WriteLine("            \"simultaneous\": true,");
                     };
-                    db.WriteLine("            \"fadein\": [" + FadeinTextbox.Text + ", " + FadeinTextbox2.Text + "],");
+                    db.WriteLine("            \"fadein\": [" + FadeinTextboxUpDown.Text + ", " + FadeinTextboxUpDown2.Text + "],");
                     db.WriteLine("            \"details_screen\": \"/titles/HLV-C-" + GamecodeTextbox.Text + "/HLV-C-" + GamecodeTextbox.Text + "00.xtx.z\",");
                     db.WriteLine("            \"armet_threshold\": 80,");
                     db.WriteLine("            \"sort_publisher\": \"" + PublisherTextbox.Text + "\"");
@@ -721,7 +694,7 @@ namespace NES_Online_Game_Injector.GUI
                         "\"rom\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + ".nes\", " +
                         "\"copyright\": \"" + CopyrightTextbox.Text + "\", " +
                         "\"title\": \"" + GametitleTextbox.Text + "\", " +
-                        "\"volume\": " + VolumeTextbox.Text + ", " +
+                        "\"volume\": " + VolumeUpDown.Text + ", " +
                         "\"release_date\": \"1987-12-01\", " +
                         "\"players_count\": 1," +
                         "\"cover\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + ".xtx.z\"," +
@@ -730,7 +703,7 @@ namespace NES_Online_Game_Injector.GUI
                         "\"lcla6_release_date\": \"2018-09-01\"," +
                         "\"save_count\": 0," +
                         "\"simultaneous\": false," +
-                        "\"fadein\": [" + FadeinTextbox.Text + ", " + FadeinTextbox2.Text + "]," +
+                        "\"fadein\": [" + FadeinTextboxUpDown.Text + ", " + FadeinTextboxUpDown2.Text + "]," +
                         "\"details_screen\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + "00.xtx.z\"," +
                         "\"armet_threshold\": 80," +
                         "\"sort_publisher\": \"" + PublisherTextbox.Text + "\"" + "}]}";
@@ -746,7 +719,7 @@ namespace NES_Online_Game_Injector.GUI
                         "\"rom\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + ".nes\", " +
                         "\"copyright\": \"" + CopyrightTextbox.Text + "\", " +
                         "\"title\": \"" + GametitleTextbox.Text + "\", " +
-                        "\"volume\": " + VolumeTextbox.Text + ", " +
+                        "\"volume\": " + VolumeUpDown.Text + ", " +
                         "\"release_date\": \"1987-12-01\", " +
                         "\"players_count\": 1," +
                         "\"cover\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + ".xtx.z\"," +
@@ -755,7 +728,7 @@ namespace NES_Online_Game_Injector.GUI
                         "\"lcla6_release_date\": \"2018-09-01\"," +
                         "\"save_count\": 0," +
                         "\"simultaneous\": true," +
-                        "\"fadein\": [" + FadeinTextbox.Text + ", " + FadeinTextbox2.Text + "]," +
+                        "\"fadein\": [" + FadeinTextboxUpDown.Text + ", " + FadeinTextboxUpDown2.Text + "]," +
                         "\"details_screen\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + "00.xtx.z\"," +
                         "\"armet_threshold\": 80," +
                         "\"sort_publisher\": \"" + PublisherTextbox.Text + "\"" + "}]}";
@@ -978,13 +951,13 @@ namespace NES_Online_Game_Injector.GUI
                     db.WriteLine("            \"rom\": \"/titles/" + GameDirTextBox.Text + "/CLV-P-" + GamecodeTextbox.Text + ".nes\",");
                     db.WriteLine("            \"copyright\": \"" + CopyrightTextbox.Text + "\",");
                     db.WriteLine("            \"title\": \"" + GametitleTextbox.Text + "\",");
-                    db.WriteLine("            \"volume\": " + VolumeTextbox.Text + ",");
-                    db.WriteLine("            \"release_date\": " + ReleaseDateTextBox.Text + "-" + ReleaseDateTextBox2.Text + "-" + ReleaseDateTextBox3.Text + ",");
-                    db.WriteLine("            \"players_count\": " + PlayersCountTextBox1.Text + ",");
+                    db.WriteLine("            \"volume\": " + VolumeUpDown.Text + ",");
+                    db.WriteLine("            \"release_date\": " + ReleaseDateUpDown1.Text + "-" + ReleaseDateUpDown2.Text + "-" + ReleaseDateUpDown3.Text + ",");
+                    db.WriteLine("            \"players_count\": " + PlayersCountUpDown1.Text + ",");
                     db.WriteLine("            \"cover\": \"/titles/" + GameDirTextBox.Text + "/CLV-P-" + GamecodeTextbox.Text + ".xtx.z\",");
                     db.WriteLine("            \"overscan\": [" + OverscanTextBox.Text + ", " + OverscanTextBox2.Text + ", " + OverscanTextBox3.Text + ", " + OverscanTextBox4.Text + "],");
                     db.WriteLine("            \"armet_version\": \"v1\",");
-                    db.WriteLine("            \"lcla6_release_date\": " + lcla6TextBox.Text + "-" + lcla6TextBox2.Text + "-" + lcla6TextBox3.Text + ",");
+                    db.WriteLine("            \"lcla6_release_date\": " + lcla6UpDown1.Text + "-" + lcla6UpDown2.Text + "-" + lcla6UpDown3.Text + ",");
                     db.WriteLine("            \"save_count\": 0,");
                     if (SimultanusFalseRadioButton.Checked)
                     {
@@ -994,7 +967,7 @@ namespace NES_Online_Game_Injector.GUI
                     {
                         db.WriteLine("            \"simultaneous\": true,");
                     };
-                    db.WriteLine("            \"fadein\": [" + FadeinTextbox.Text + ", " + FadeinTextbox2.Text + "],");
+                    db.WriteLine("            \"fadein\": [" + FadeinTextboxUpDown.Text + ", " + FadeinTextboxUpDown2.Text + "],");
                     db.WriteLine("            \"details_screen\": \"/titles/" + GameDirTextBox.Text + "/CLV-P-" + GamecodeTextbox.Text + "00.xtx.z\",");
                     db.WriteLine("            \"armet_threshold\": 80,");
                     db.WriteLine("            \"sort_publisher\": \"" + PublisherTextbox.Text + "\"");
@@ -1118,7 +1091,7 @@ namespace NES_Online_Game_Injector.GUI
                         "\"rom\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + ".nes\", " +
                         "\"copyright\": \"" + CopyrightTextbox.Text + "\", " +
                         "\"title\": \"" + GametitleTextbox.Text + "\", " +
-                        "\"volume\": " + VolumeTextbox.Text + ", " +
+                        "\"volume\": " + VolumeUpDown.Text + ", " +
                         "\"release_date\": \"1987-12-01\", " +
                         "\"players_count\": 1," +
                         "\"cover\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + ".xtx.z\"," +
@@ -1127,7 +1100,7 @@ namespace NES_Online_Game_Injector.GUI
                         "\"lcla6_release_date\": \"2018-09-01\"," +
                         "\"save_count\": 0," +
                         "\"simultaneous\": false," +
-                        "\"fadein\": [" + FadeinTextbox.Text + ", " + FadeinTextbox2.Text + "]," +
+                        "\"fadein\": [" + FadeinTextboxUpDown.Text + ", " + FadeinTextboxUpDown2.Text + "]," +
                         "\"details_screen\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + "00.xtx.z\"," +
                         "\"armet_threshold\": 80," +
                         "\"sort_publisher\": \"" + PublisherTextbox.Text + "\"" + "}]}";
@@ -1143,7 +1116,7 @@ namespace NES_Online_Game_Injector.GUI
                         "\"rom\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + ".nes\", " +
                         "\"copyright\": \"" + CopyrightTextbox.Text + "\", " +
                         "\"title\": \"" + GametitleTextbox.Text + "\", " +
-                        "\"volume\": " + VolumeTextbox.Text + ", " +
+                        "\"volume\": " + VolumeUpDown.Text + ", " +
                         "\"release_date\": \"1987-12-01\", " +
                         "\"players_count\": 1," +
                         "\"cover\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + ".xtx.z\"," +
@@ -1152,7 +1125,7 @@ namespace NES_Online_Game_Injector.GUI
                         "\"lcla6_release_date\": \"2018-09-01\"," +
                         "\"save_count\": 0," +
                         "\"simultaneous\": true," +
-                        "\"fadein\": [" + FadeinTextbox.Text + ", " + FadeinTextbox2.Text + "]," +
+                        "\"fadein\": [" + FadeinTextboxUpDown.Text + ", " + FadeinTextboxUpDown2.Text + "]," +
                         "\"details_screen\": \"/titles/CLV-G-" + GamecodeTextbox.Text + "/CLV-G-" + GamecodeTextbox.Text + "00.xtx.z\"," +
                         "\"armet_threshold\": 80," +
                         "\"sort_publisher\": \"" + PublisherTextbox.Text + "\"" + "}]}";
@@ -1270,32 +1243,32 @@ namespace NES_Online_Game_Injector.GUI
                 MessageBox.Show("Enter the Overscan box 4 between (0 and 9)", "Error.", MessageBoxButtons.OK);
                 return;
             }
-            else if (FadeinTextbox.Text == string.Empty)
+            else if (FadeinTextboxUpDown.Text == string.Empty)
             {
                 MessageBox.Show("Enter the Fade In box 1", "Error.", MessageBoxButtons.OK);
                 return;
             }
-            else if (FadeinTextbox.Text.Length < 1 || FadeinTextbox.Text.Length > 1)
+            else if (FadeinTextboxUpDown.Text.Length < 1 || FadeinTextboxUpDown.Text.Length > 1)
             {
                 MessageBox.Show("Enter the Fade In box 1 between (0 and 9)", "Error.", MessageBoxButtons.OK);
                 return;
             }
-            else if (FadeinTextbox2.Text == string.Empty)
+            else if (FadeinTextboxUpDown2.Text == string.Empty)
             {
                 MessageBox.Show("Enter the Fade In box 2", "Error.", MessageBoxButtons.OK);
                 return;
             }
-            else if (FadeinTextbox2.Text.Length < 1 || FadeinTextbox2.Text.Length > 1)
+            else if (FadeinTextboxUpDown2.Text.Length < 1 || FadeinTextboxUpDown2.Text.Length > 1)
             {
                 MessageBox.Show("Enter the Fade In box 2 between (0 and 9)", "Error.", MessageBoxButtons.OK);
                 return;
             }
-            else if (VolumeTextbox.Text.Length < 1 || VolumeTextbox.Text.Length > 2)
+            else if (VolumeUpDown.Text.Length < 1 || VolumeUpDown.Text.Length > 2)
             {
                 MessageBox.Show("Enter the Volume (1-99)", "Error.", MessageBoxButtons.OK);
                 return;
             }
-            else if (VolumeTextbox.Text == string.Empty)
+            else if (VolumeUpDown.Text == string.Empty)
             {
                 MessageBox.Show("Enter the Volume", "Error.", MessageBoxButtons.OK);
                 return;
@@ -1361,45 +1334,11 @@ namespace NES_Online_Game_Injector.GUI
             //Process.Start("https://discord.gg/8mNFFcC");
         }
 
-        private void FadeinTextboxUpDown_ValueChanged(object sender, EventArgs e)
-        {
-            this.FadeinTextbox.Text = FadeinTextboxUpDown.Text;
-        }
-
-        private void FadeinTextboxUpDown2_ValueChanged(object sender, EventArgs e)
-        {
-            this.FadeinTextbox2.Text = FadeinTextboxUpDown2.Text;
-        }
-
-        private void OverscanTextboxUpDown_ValueChanged(object sender, EventArgs e)
-        {
-            this.OverscanTextBox.Text = OverscanUpDown.Text;
-        }
-
-        private void OverscanTextboxUpDown2_ValueChanged(object sender, EventArgs e)
-        {
-            this.OverscanTextBox2.Text = OverscanUpDown2.Text;
-        }
-
-        private void OverscanTextboxUpDown3_ValueChanged(object sender, EventArgs e)
-        {
-            this.OverscanTextBox3.Text = OverscanUpDown3.Text;
-        }
-
-        private void OverscanTextboxUpDown4_ValueChanged(object sender, EventArgs e)
-        {
-            this.OverscanTextBox4.Text = OverscanUpDown4.Text;
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             SetFormatComboBox.SelectedIndex = 0;
         }
-
-        private void VolumeTextboxUpDown_ValueChanged(object sender, EventArgs e)
-        {
-            this.VolumeTextbox.Text = VolumeUpDown.Text;
-        }
+        
 
         private void infoReleaseDate_Click(object sender, EventArgs e)
         {
@@ -1410,45 +1349,47 @@ namespace NES_Online_Game_Injector.GUI
         {
             toolTipReleaseDate_1lcla6.SetToolTip(infolcla6, "Just Enter the Date The program will do the rest!");
         }
-
-        private void ReleaseDateUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            this.ReleaseDateTextBox.Text = ReleaseDateUpDown1.Text;
-        }
-
-        private void ReleaseDateUpDown2_ValueChanged(object sender, EventArgs e)
-        {
-            this.ReleaseDateTextBox2.Text = ReleaseDateUpDown2.Text;
-        }
-
-        private void ReleaseDateUpDown3_ValueChanged(object sender, EventArgs e)
-        {
-            this.ReleaseDateTextBox3.Text = ReleaseDateUpDown3.Text;
-        }
-
-        private void lcla6UpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            this.lcla6TextBox.Text = lcla6UpDown1.Text;
-        }
-
-        private void lcla6UpDown2_ValueChanged(object sender, EventArgs e)
-        {
-            this.lcla6TextBox2.Text = lcla6UpDown2.Text;
-        }
-
-        private void lcla6UpDown3_ValueChanged(object sender, EventArgs e)
-        {
-            this.lcla6TextBox3.Text = lcla6UpDown3.Text;
-        }
-
-        private void PlayersCountUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            this.PlayersCountTextBox1.Text = PlayersCountUpDown1.Text;
-        }
-
+        
         private void PlayersCount_Click(object sender, EventArgs e)
         {
             toolTipPlayersCount.SetToolTip(PlayersCount, "How Many Players ?!");
+        }
+
+        private void materialTabSelector1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FadeinTextboxUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(FadeinTextboxUpDown.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers [0-9].");
+                FadeinTextboxUpDown.Text = FadeinTextboxUpDown.Text.Remove(FadeinTextboxUpDown.Text.Length - 1);
+            }
+        }
+
+        private void FadeinTextboxUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(FadeinTextboxUpDown2.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Please enter only numbers [0-9].");
+                FadeinTextboxUpDown2.Text = FadeinTextboxUpDown2.Text.Remove(FadeinTextboxUpDown2.Text.Length - 1);
+            }
+        }
+
+        private void VolumeUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(VolumeUpDown.Text, "[^0-99]"))
+            {
+                MessageBox.Show("Please enter only numbers [0-99].");
+                VolumeUpDown.Text = VolumeUpDown.Text.Remove(VolumeUpDown.Text.Length - 1);
+            }
         }
     }
 }
