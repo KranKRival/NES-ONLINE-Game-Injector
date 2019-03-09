@@ -7,7 +7,7 @@
 * Also, you need your "lclassics.titlesdb" file
 
 
-## Legend:
+## Instructions
 
 * Sort Title = "Sort of the game"
 * Publisher = "Publisher of the game"
@@ -23,14 +23,13 @@
 Output folder: (NESONLINEGameAutoInjectorMod).path/NES_ONLINE_MOD
 
 # Changelog
-## Version 1.3.5M (3.5) (The Myth 1.3.5M)
-* Fixed Game Code Generation, no more exeptions
-* Fixed Game Title Generation, Tool will remove all Special Characters from the Game file opened
-* Fixed Throw Exeption Error When Canaceling Open Rom File dialog
-* Added Extra Checks For Game Code & Game Tiltele Generation scripts to insure stability
+## Version 1.4.0M (New Era)
+* Complete Tool UI redesign now the tool has 2 Tabs one for files and other for values
+* Fixes issues with Numeric inputs , now should be no devide by 1 or 2 happening
+* included 2 Image templates 1 for Backgroud and 2 for ScreenShot Both PSD/PNG files present, See "Image Templates" folder in Last Release
+* anhanced the user exprience  !!!
 
-
-## Version 1.3M (3.5) (The Myth)
+## Version 1.3M (The Myth)
 
 * Fixed Output Directory Name, Dosn't Show GameCode Anymore in Game directory Name
 * Fixed Wrong GameCode Output inside the GameDir which Caused freezes in Nes Online when Starting the game
@@ -45,11 +44,11 @@ Output folder: (NESONLINEGameAutoInjectorMod).path/NES_ONLINE_MOD
 * Minor Bug fixes and skipped to Version 1.2 
 
 
-## Version 1.1M (3.5) (The Insomnia 1.1M)
+## Version 1.1M (The Insomnia 1.1M)
 
 * Changed from text input fields to numeric input for numbers
 
-## Version 1.0M (3.5) (The Insomnia)
+## Version 1.0M (The Insomnia)
 
 * Added new/old format support which can be chosen from the dropdown menu
 * Minor UI modifications
